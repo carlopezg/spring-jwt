@@ -1,0 +1,15 @@
+# .gitignore for spring boot application
+
+# logs
+logs
+
+#Idea files
+*.iml
+.idea/*
+
+.gradle/*
+build/*
+gradle/*
+gradlew
+gradlew.bat
+settings.gradle
