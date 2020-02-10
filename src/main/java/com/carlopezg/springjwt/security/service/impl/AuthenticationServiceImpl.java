@@ -1,9 +1,8 @@
-package com.carlopezg.springjwt.service.impl;
+package com.carlopezg.springjwt.security.service.impl;
 
 import com.carlopezg.springjwt.security.JwtTokenProvider;
 import com.carlopezg.springjwt.security.model.SecurityData;
-import com.carlopezg.springjwt.security.service.JwtUserDetailServiceImpl;
-import com.carlopezg.springjwt.service.AuthenticationService;
+import com.carlopezg.springjwt.security.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -21,9 +20,6 @@ public class AuthenticationServiceImpl implements AuthenticationService {
 
     @Autowired
     JwtTokenProvider jwtTokenProvider;
-
-    @Autowired
-    JwtUserDetailServiceImpl userDetailService;
 
     @Override
     public String generateAuthenticationToken(SecurityData data) {

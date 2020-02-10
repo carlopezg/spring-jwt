@@ -1,7 +1,7 @@
-package com.carlopezg.springjwt.controller;
+package com.carlopezg.springjwt.security.controller;
 
 import com.carlopezg.springjwt.security.model.SecurityData;
-import com.carlopezg.springjwt.service.AuthenticationService;
+import com.carlopezg.springjwt.security.service.AuthenticationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
